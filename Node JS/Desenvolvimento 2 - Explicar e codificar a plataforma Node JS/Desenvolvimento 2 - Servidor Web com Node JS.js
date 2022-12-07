@@ -18,4 +18,4 @@ servidor.listen(PORTA, 'localhost',() => {
     Para testa abra o navegador e digite: localhost:8080
 
     Para desligar o servidor vá ao prompt de comando e aperte: ctrl + c
-*/ 
+*/ z

@@ -1,0 +1,28 @@
+REQUISIÇÃO:
+
+<?xml version="1.0"?>
+<soap:Envelope
+xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+<soap:Body xmlns:m="http://www.empresa.com/dadosclientes">
+  <m:dadosClienteRequest>
+    <m:cpf>12885687687</m:cpf>
+  </m:dadosClienteRequest>
+</soap:Body>
+</soap:Envelope>
+
+RESPOSTA: 
+
+<?xml version="1.0"?>
+<soap:Envelope
+xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+<soap:Body xmlns:m="http://www.empresa.com/dadosclientes">
+  <m:dadosClienteRequest>
+  <m:nome> Vanildo</m:nome>
+  <m:endereco>rua 28 de novembro, n° 11 </m:endereco>
+  <m:telefone>081956789346</m:telefone>
+<soap:Body>
+</soap:Envelope>
+
+
+Explicação: O que ocorre é simplesmente uma troca de informações entre aplicações via HTTP, baseado em XML.
+O Envelope em questão está servindo para definir o que está na mensagem e como processá-la.  

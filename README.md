@@ -12,3 +12,12 @@ A ação vai fornecer capacitação em Desenvolvedor Front End e Desenvolvedor B
 <p>
 A FAP terá duração de 24 semanas, com um total de 276 horas, sendo 180 no modo EAD e 96 horas de aula presenciais.
 </p>
+
+<p>
+<img src="https://github.com/CarlosEduardo31/Softex-Pernambuco/blob/main/Certificado/Certificado-1.png?raw=true"  title="Certificado Softex">
+</p>
+
+<p>
+<img src="https://github.com/CarlosEduardo31/Softex-Pernambuco/blob/main/Certificado/Certificado-2.png?raw=true"  title="Certificado Softex">
+</p>
+

@@ -3,16 +3,27 @@
 3.Interface uniforme;
 4.Armazenamento em cache;
 5.Sistema em camadas;
-6.Código sob demanda;
+6.CÃ³digo sob demanda;
 
-Sem estado: de acordo com este princípio, cada solicitação enviada do cliente ao servidor deve incluir todas as informações necessárias para compreender a solicitação. As APIs são denominadas “Sem Estado” porque cada chamada é independente umas das outras.
+Sem estado: de acordo com este princÃ­pio, cada solicitaÃ§Ã£o enviada do cliente ao servidor deve incluir todas as informaÃ§Ãµes necessÃ¡rias para compreender a
+solicitaÃ§Ã£o. As APIs sÃ£o denominadas â€œSem Estadoâ€ porque cada chamada Ã© independente umas das outras.
 
-Cliente-servidor: este princípio trabalha com o conceito de que cliente e servidor devem ser isolados um do outro e ter permissão para desenvolver de forma independente. Ao separar as preocupações de interface de usuário do armazenamento de dados, é possível melhorar a portabilidade através de múltiplas plataformas, simplificar os componentes do servidor, mas principalmente, permitir a evolução de forma independente uma vez que um não tem dependência do outro.
+Cliente-servidor: este princÃ­pio trabalha com o conceito de que cliente e servidor devem ser isolados um do outro e ter permissÃ£o para desenvolver de forma independente.
+Ao separar as preocupaÃ§Ãµes de interface de usuÃ¡rio do armazenamento de dados, Ã© possÃ­vel melhorar a portabilidade atravÃ©s de mÃºltiplas plataformas, simplificar os
+componentes do servidor, mas principalmente, permitir a evoluÃ§Ã£o de forma independente uma vez que um nÃ£o tem dependÃªncia do outro.
 
-Interface uniforme: a característica da arquitetura REST é uma interface uniforme entre o cliente e servidor. Como o cliente e servidor compartilham esta interface, deve-se ter um “contrato” bem definido para comunicação entre os lados. Há quatros princípios que devem ser seguidos para obter uma interface uniforme: Identificação dos Recursos, Representação dos recursos, Mensagens auto-descritivas e Hypermedia.
+Interface uniforme: a caracterÃ­stica da arquitetura REST Ã© uma interface uniforme entre o cliente e servidor. Como o cliente e servidor compartilham esta interface, deve-se
+ter um â€œcontratoâ€ bem definido para comunicaÃ§Ã£o entre os lados. HÃ¡ quatros princÃ­pios que devem ser seguidos para obter uma interface uniforme: IdentificaÃ§Ã£o dos
+Recursos, RepresentaÃ§Ã£o dos recursos, Mensagens auto-descritivas e Hypermedia.
 
-Armazenamento em cache: como uma API sem estado pode aumentar sobrecarga de solicitação gerenciando grandes cargas de chamadas de entrada e saída, o cache ajuda a melhorar a performance, a escalabilidade e eficiência uma vez que reduz o tempo de resposta médio quando comparado entre uma série de interações cliente-servidor.
+Armazenamento em cache: como uma API sem estado pode aumentar sobrecarga de solicitaÃ§Ã£o gerenciando grandes cargas de chamadas de entrada e saÃ­da, o cache ajuda a
+melhorar a performance, a escalabilidade e eficiÃªncia uma vez que reduz o tempo de resposta mÃ©dio quando comparado entre uma sÃ©rie de interaÃ§Ãµes cliente-servidor.
 
-Sistema em camadas: a arquitetura REST inclui várias camadas que operam juntas para construir uma hierarquia que contribui para que a aplicação seja escalável e flexível. É recomendável que o cliente nunca se conecte diretamente no servidor de aplicação e que uma camada de balanceamento de carga seja adicionada entre cliente-servidor, isso ajuda na segurança e restringe o desempenho do componente. de modo que cada componente não pode "ver" além da camada imediata com a qual está se misturando.
+Sistema em camadas: a arquitetura REST inclui vÃ¡rias camadas que operam juntas para construir uma hierarquia que contribui para que a aplicaÃ§Ã£o seja escalÃ¡vel e flexÃ­vel.
+Ã‰ recomendÃ¡vel que o cliente nunca se conecte diretamente no servidor de aplicaÃ§Ã£o e que uma camada de balanceamento de carga seja adicionada entre cliente-servidor, isso
+ajuda na seguranÃ§a e restringe o desempenho do componente. de modo que cada componente nÃ£o pode "ver" alÃ©m da camada imediata com a qual estÃ¡ se misturando.
 
-Código sob demanda: código sob demanda define a possibilidade de serviços baseados em REST responderem como representação de um recurso informação executável pelo cliente. Esta possibilidade de entrega de funcionalidades, no entanto deve ser suportada pelo cliente criando um ambiente de execução propício para sua execução. Na maioria das vezes, um servidor retorna representação estática de recursos no formato XML ou JSON. Porém, quando necessário, os servidores podem fornecer código executável ao cliente
+CÃ³digo sob demanda: cÃ³digo sob demanda define a possibilidade de serviÃ§os baseados em REST responderem como representaÃ§Ã£o de um recurso informaÃ§Ã£o executÃ¡vel pelo
+cliente. Esta possibilidade de entrega de funcionalidades, no entanto deve ser suportada pelo cliente criando um ambiente de execuÃ§Ã£o propÃ­cio para sua execuÃ§Ã£o. Na
+maioria das vezes, um servidor retorna representaÃ§Ã£o estÃ¡tica de recursos no formato XML ou JSON. PorÃ©m, quando necessÃ¡rio, os servidores podem fornecer cÃ³digo executÃ¡vel
+ao cliente
